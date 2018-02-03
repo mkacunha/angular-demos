@@ -1,0 +1,10 @@
+<form #form="ngForm">
+
+  <input appShowError #teste="ngModel" [(ngModel)]="name" required type="text" name="name" id="name">
+  <input appShowError #teste="ngModel" min="5" [(ngModel)]="idade" required type="text" name="idade" id="idade">
+  <br> {{name}}
+  <br>
+  <br>
+  <br>
+  <br> {{teste?.valid}}
+</form>
